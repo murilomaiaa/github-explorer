@@ -1,9 +1,9 @@
 import React from 'react';
 
+import { Title } from './styles';
+
 const Dasboard: React.FC = () => (
-  <h1>
-    Dasboard
-  </h1>
+  <Title>Explore repositórios no github</Title>
 );
 
 export default Dasboard;
