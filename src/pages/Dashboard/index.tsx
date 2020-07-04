@@ -1,9 +1,19 @@
 import React from 'react';
 
-import { Title } from './styles';
+import logo from '../../assets/logo.svg';
+
+import { Title, Form } from './styles';
 
 const Dasboard: React.FC = () => (
-  <Title>Explore repositórios no github</Title>
+  <>
+    <img src={logo} alt="Github Explorer" />
+    <Title>Explore repositórios no github</Title>
+
+    <Form>
+      <input placeholder="Digite o nome do repositório" />
+      <button type="submit">Pesquisar</button>
+    </Form>
+  </>
 );
 
 export default Dasboard;
