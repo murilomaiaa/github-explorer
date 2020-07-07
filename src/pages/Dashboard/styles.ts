@@ -8,6 +8,7 @@ export const Title = styled.h1`
   line-height: 56px;
 
   margin-top: 80px;
+
 `;
 
 export const Form = styled.form`
@@ -76,7 +77,8 @@ export const Repositories = styled.div`
     }
 
     div {
-      margin-left: 16px;
+      margin: 0 16px;
+      flex: 1;
 
       strong {
         font-size: 20px;
