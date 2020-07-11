@@ -38,9 +38,15 @@ export const RepositoryInfo = styled.section`
     div {
       margin-left: 24px;
 
-      strong {
+      strong a {
         font-size: 36px;
         color: #3d3d4d;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #4e4e5e;
+        }
       }
 
       p {

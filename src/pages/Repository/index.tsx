@@ -14,6 +14,7 @@ interface RepositoryParams {
 interface Repository {
   full_name: string;
   description: string;
+  html_url: string;
   stargazers_count: number;
   forks_count: number;
   open_issues_count: number;
@@ -65,7 +66,11 @@ const Repository: React.FC = () => {
             alt={repository.owner.login}
           />
           <div>
-            <strong>{repository.full_name}</strong>
+            <strong>
+              <a target="_blank" href={repository.html_url}>
+                {repository.full_name}
+              </a>
+            </strong>
             <p>{repository.description}</p>
           </div>
         </header>
